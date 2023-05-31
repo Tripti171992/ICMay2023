@@ -15,7 +15,7 @@ namespace FirstGitHubProject.Pages
             //----------------Launching and login in Turn Up portal-------------
             //Navigate to tunup portal 
             driver.Navigate().GoToUrl("http://horse.industryconnect.io/Account/Login?ReturnUrl=%2f");
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
 
             //Maximizing the window
             driver.Manage().Window.Maximize();
@@ -24,16 +24,16 @@ namespace FirstGitHubProject.Pages
             Wait.WaitToExist(driver, "Id", "UserName", 2);
 
             //identify the username textbox and fill username
-            IWebElement txtUserName = driver.FindElement(By.Id("UserName"));// Textbox , button,dropdown etc. all are webelemnets
-            txtUserName.SendKeys("Hari");
+            IWebElement textUserName = driver.FindElement(By.Id("UserName"));// Textbox , button,dropdown etc. all are webelemnets
+            textUserName.SendKeys("Hari");
 
             //identify the password textbox and fill password
-            IWebElement txtPswd = driver.FindElement(By.Id("Password"));
-            txtPswd.SendKeys("123123");
+            IWebElement textPswd = driver.FindElement(By.Id("Password"));
+            textPswd.SendKeys("123123");
 
             //identify the login button and click on it
-            IWebElement btnLogIn = driver.FindElement(By.XPath("//*[@id=\"loginForm\"]/form/div[3]/input[1]"));
-            btnLogIn.Click();
+            IWebElement buttonLogIn = driver.FindElement(By.XPath("//*[@id=\"loginForm\"]/form/div[3]/input[1]"));
+            buttonLogIn.Click();
             Thread.Sleep(2000);
 
             /*

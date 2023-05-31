@@ -22,5 +22,17 @@ namespace FirstGitHubProject.Pages
              Thread.Sleep(2000);
             
         }
+        public void GoToEmployeesPage(IWebDriver driver)
+        {
+            //----------------- Navigating to Employees page-----------
+
+            //find and clicking on Administration dropdown
+            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
+
+            //find and click on Employees from dropdown
+            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[2]/a")).Click();
+            Thread.Sleep(2000);
+
+        }
     }
 }
