@@ -16,7 +16,7 @@ namespace FirstGitHubProject.Tests
     public class TM_Tests:CommonDriver
     {
         [SetUp]
-        public void SetActions()
+        public void SetUpActions()
         {
             //OPen chrome browser
             driver = new ChromeDriver();// For creating Browser instance
@@ -41,8 +41,8 @@ namespace FirstGitHubProject.Tests
        public void EditTM_Test()
         {
            
-            TMPage TMPageObj = new TMPage();
-            TMPageObj.EditRecord(driver);
+            TMPage tMPageObj = new TMPage();
+           // tMPageObj.EditRecord(driver); // commenting coz,edited for specflow data driven testing
         }
         [Test, Order(3)]
         public void DeleteTM_Test()

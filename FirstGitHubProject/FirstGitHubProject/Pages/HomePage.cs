@@ -15,11 +15,13 @@ namespace FirstGitHubProject.Pages
             //----------------- Navigating to time and material page-----------
 
             //find and clicking on Administration dropdown
-            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
+          //driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
+            driver.FindElement(By.XPath("//a[text()='Administration ']")).Click();
 
             //find and click on Time and Material from dropdown
-            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a")).Click();
-             Thread.Sleep(2000);
+            //  driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a")).Click();
+            driver.FindElement(By.XPath("//a[text()='Time & Materials']")).Click();
+            Thread.Sleep(2000);
             
         }
         public void GoToEmployeesPage(IWebDriver driver)

@@ -12,11 +12,11 @@ using System.Threading.Tasks;
 namespace FirstGitHubProject.Tests
 {
     [TestFixture]
-    //[Parallelizable]
+    [Parallelizable]
     public class Employees_Tests : CommonDriver
     {
         [SetUp]
-        public void SetActions()
+        public void SetUpActions()
         {
             driver = new ChromeDriver();
             LoginPage loginPageObj = new LoginPage();
